@@ -40,7 +40,7 @@ export default function Home() {
               setView("Projects");
             }}
           >
-            PROJECTS
+            EXPERIENCE
           </div>
           <div
             className={
@@ -103,12 +103,10 @@ export default function Home() {
             </div>
           )}
           {view == "Publications" && (
-            <div>
-              <div className="h-full overflow-y-scroll pb-10">
-                {publications.map((p) => {
-                  return <Publication publication={p} key={p.title} />;
-                })}
-              </div>
+            <div className="h-full overflow-y-scroll pb-10">
+              {publications.map((p) => {
+                return <Publication publication={p} key={p.title} />;
+              })}
             </div>
           )}
           {view == "CV" && (

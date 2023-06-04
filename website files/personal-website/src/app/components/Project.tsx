@@ -14,13 +14,13 @@ interface ProjectInterface {
 export default function Project({ project }: ProjectInterface) {
   return (
     <div>
-      <div className="my-4 border-grey border-b-2 py-4 mr-8 w-10/12">
+      <div className="my-4 border-grey border-b-2 py-4 mr-8 w-11/12">
         <div className="text-3xl font-extralight">{project.title}</div>
         <div className="text-lg font-thin">{project.type}</div>
         <div className="text-lg font-thin">
           <span className="text-base">Role:</span> {project.role}
         </div>
-        <div className="text-xl mt-4 font-light">
+        <div className="text-xl mt-4 font-light text-justify">
           {parse(project.content)}
         </div>
         <Image
