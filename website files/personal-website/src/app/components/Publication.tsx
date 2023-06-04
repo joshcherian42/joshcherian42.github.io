@@ -21,7 +21,8 @@ export default function Project({ publication }: PublicationInterface) {
         <div className="text-lg font-thin">{publication.location}</div>
         <div className="text-lg font-thin">{publication.year}</div>
         <div className="cursor-pointer text-text-color mt-4 flex">
-          <div className="mr-4"
+          <div
+            className="mr-4"
             onClick={() => {
               setShowAbstract(!showAbstract);
             }}
@@ -43,7 +44,10 @@ export default function Project({ publication }: PublicationInterface) {
         <div className="flex mt-4 flex-wrap gap-y-3 font-light">
           {publication.keywords.map((k) => {
             return (
-              <div className="mx-2 px-4 bg-badge rounded-2xl cursor-pointer">
+              <div
+                key={k}
+                className="mx-2 px-4 bg-badge rounded-2xl cursor-pointer"
+              >
                 {k}
               </div>
             );

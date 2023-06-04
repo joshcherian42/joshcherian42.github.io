@@ -76,7 +76,7 @@ export default function Home() {
               style={{ top: "35%" }}
             >
               <div className="text-3xl">
-                Hi I'm <span className="text-text-color">Josh</span>.
+                Hi I&apos;m <span className="text-text-color">Josh</span>.
               </div>
               <div className="font-extralight mt-4 mb-4">
                 I just graduated with my Ph.D. in computer science from the
@@ -88,7 +88,7 @@ export default function Home() {
                 . My main area of research was in the area of activity
                 recognition, seeking to develop novel machine learning
                 techniques designed to recognize Activities of Daily Living.
-                I've also worked on and published in other areas including
+                I&apos;ve also worked on and published in other areas including
                 gesture recognition, sketch recognition, eye tracking, and
                 intelligent tutoring systems.
               </div>
@@ -98,7 +98,7 @@ export default function Home() {
           {view == "Projects" && (
             <div className="h-full overflow-y-scroll pb-10">
               {projects.map((p) => {
-                return <Project project={p} />;
+                return <Project project={p} key={p.title} />;
               })}
             </div>
           )}
@@ -106,7 +106,7 @@ export default function Home() {
             <div>
               <div className="h-full overflow-y-scroll pb-10">
                 {publications.map((p) => {
-                  return <Publication publication={p} />;
+                  return <Publication publication={p} key={p.title} />;
                 })}
               </div>
             </div>
