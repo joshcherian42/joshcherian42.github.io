@@ -1,5 +1,5 @@
 import Image from "next/image";
-import parse from 'html-react-parser';
+import parse from "html-react-parser";
 
 interface ProjectInterface {
   project: {
@@ -7,8 +7,8 @@ interface ProjectInterface {
     type: string;
     role: string;
     content: string;
-    image: string;
-    width: number
+    images: string[];
+    widths: number[];
   };
 }
 export default function Project({ project }: ProjectInterface) {
@@ -20,16 +20,23 @@ export default function Project({ project }: ProjectInterface) {
         <div className="text-lg font-thin">
           <span className="text-base">Role:</span> {project.role}
         </div>
-        <div className="text-xl mt-4 font-light text-justify">
+        <div className="text-xl my-4 font-light text-justify">
           {parse(project.content)}
         </div>
-        <Image
-          src={project.image}
-          alt={project.title + "_visualization"}
-          width={project.width}
-          height={400}
-          className="m-auto mt-4 drop-shadow-md"
-        ></Image>
+        <div className="flex items-center justify-center">
+          {project.images.map((img, i) => {
+            return (
+              <Image
+                src={img}
+                alt={img}
+                key={i}
+                width={project.widths[i]}
+                height={800}
+                className="m-auto drop-shadow-md"
+              ></Image>
+            );
+          })}
+        </div>
       </div>
     </div>
   );

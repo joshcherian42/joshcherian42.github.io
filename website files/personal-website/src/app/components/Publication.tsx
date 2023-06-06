@@ -14,7 +14,7 @@ interface PublicationInterface {
 }
 export default function Project({ publication }: PublicationInterface) {
   const [showAbstract, setShowAbstract] = useState<boolean>(false);
-  console.log(publication.abstract);
+
   return (
     <div>
       <div className="my-4 border-grey border-b-2 py-4 mr-8 w-11/12">
@@ -32,7 +32,8 @@ export default function Project({ publication }: PublicationInterface) {
                 setShowAbstract(!showAbstract);
               }}
             >
-              View Abstract
+              {!showAbstract && "View Abstract"}
+              {showAbstract && "Hide Abstract"}
             </div>
           )}
           {publication.paper && (

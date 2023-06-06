@@ -53,7 +53,12 @@ const publications = [
     venue: "IUI 2023 Companion Proceedings",
     location: "Sydney, Australia",
     year: "March 27, 2023",
-    keywords: ["Conference Publication", "MCI", "Machine Learning", "CNN"],
+    keywords: [
+      "Conference Publication",
+      "Gesture Recognition",
+      "Virtual Meetings",
+      "Video Filters",
+    ],
     paper: "https://dl.acm.org/doi/abs/10.1145/3581754.3584141",
     abstract:
       "The prevalence of virtual meeting software and webcams have normalized holding group meetings both remotely and distributed. However, virtual meetings reduce viewing to computing displays and listening to unidirectional speakers, which disrupt real-life social cues for activities such as informally polling participants “on-the-fly”. This paper proposes an intelligent virtual meetings app called Show of Hands, which leverages nonverbal communication cues to spontaneously poll virtual participants. The app recognizes virtual participants’ intuitive real-time hand gestures to express intended polling selections, and then displays in real-time highly-visible video filters that overlay participants’ camera views and a visual chart of the aggregated polling counts. Our work benefits virtual participants in seamlessly conducting spontaneous polls to gauge opinions or check knowledge of attendees without prior preparation, expressing poll responses using familiar physical gestures, and being better informed of poll results with both a distributed view of video filters and a focused chart visualization.",
@@ -65,7 +70,12 @@ const publications = [
     venue: "IUI 2023 Companion Proceedings",
     location: "Sydney, Australia",
     year: "March 27, 2023",
-    keywords: ["Conference Publication", "MCI", "Machine Learning", "CNN"],
+    keywords: [
+      "Conference Publication",
+      "Sketch Recognition",
+      "Chemistry",
+      "Intelligent Tutoring Systems",
+    ],
     paper: "https://dl.acm.org/doi/abs/10.1145/3581754.3584146",
     abstract:
       "Introductory chemistry courses teach the process of drawing basic chemical molecules with the use of Lewis dot diagrams. However, many beginner students struggle in mastering these diagrams. While there exists educational applications that focus on assisting students in learning Lewis dot diagrams, these applications do not leverage students’ pen-and-paper activities in practicing their usage of Lewis dot diagrams. Furthermore, there exists automated sketch recognition approaches that focus on classifying advanced chemical diagrams, but such approaches focus more on robustly recognizing experts’ completed diagrams and less on assessing novices’ practice diagrams. In this study, we propose an intelligent tutoring system for enabling students to practice constructing Lewis dot diagrams (i.e., constructing, checking, and modifying) with automatic constructive feedback, while allowing them to retain their familiar writing conventions similarly to pen and paper.",
@@ -91,16 +101,10 @@ const publications = [
       "Comparing Student and Recruiter Evaluations of Computer Science Resumes",
     venue: "IEEE Transactions on Education",
     year: "August 2022",
-    keywords: [
-      "Journal Publication",
-      "Activity Recognition",
-      "Machine Learning",
-      "Smartwatches",
-      "Time-Series Data",
-      "Brushing Teeth",
-      "Activities of Daily Living",
-    ],
+    keywords: ["Journal Publication", "Education", "Resume Screening"],
     paper: "https://ieeexplore.ieee.org/abstract/document/9873810",
+    abstract:
+      "Contribution: This study identifies which entry-level computer science (CS) resume items are most important and compares the ratings of student and recruiter participants to investigate the accuracy of student beliefs. To the authors’ knowledge, this study is the first to analyze the extent to which CS students understand the resume screening process. The results of this have consequences for students in their own resume development.<br/><br/>Background: Although prior research studies the importance of different resume items generally, little is known about resumes for CS majors, which may contain distinctive sections. Less still is known about whether students understand the resume screening process.<br/><br/>Research Questions: Which items on entry-level CS resumes most directly influence screening decisions? What gaps exist between CS students’ and recruiters’ perceptions of resume items? Does the disparity in expertise between students and recruiters contribute to differences in resume screening?<br/><br/>Methodology: 197 recruiters and 73 CS undergraduates screened randomized CS resumes. Data were analyzed using ordinary least-squares regression with interactions.<br/><br/>Findings: Students were more likely than recruiters to move resumes to the next level and spent about 7 s less than recruiters when screening resumes. Though students correctly assessed the value of most resume items, they significantly overestimated the value of prior work experience such as internships.",
   },
 
   {
@@ -110,12 +114,9 @@ const publications = [
     year: "March 2022",
     keywords: [
       "Journal Publication",
-      "Activity Recognition",
-      "Machine Learning",
-      "Smartwatches",
-      "Time-Series Data",
-      "Brushing Teeth",
-      "Activities of Daily Living",
+      "Education",
+      "Gender Gap",
+      "Online Education Platform",
     ],
     paper: "https://link.springer.com/article/10.1007/s41979-022-00068-4",
     abstract:
@@ -128,7 +129,12 @@ const publications = [
     venue: "IUI 2022",
     location: "Helsinki, Finland",
     year: "March 22-25, 2022",
-    keywords: ["Conference Publication", "MCI", "Machine Learning", "CNN"],
+    keywords: [
+      "Conference Publication",
+      "Gesture Recognition",
+      "Virtual Meetings",
+      "Video Filters",
+    ],
     paper: "https://dl.acm.org/doi/10.1145/3490099.3511153",
     abstract:
       "Increased virtual meeting software usage has allowed people to meet remotely in a more seamless fashion. However, compared to in-person meetings, valuable interaction cues such as impromptu group polling are less optimally executed due to increased difficulty in gauging remote participants, while also requiring prior meeting setup for automated counting with built-in polling tools. We propose a novel intelligent user interface approach for virtual meeting software that supports impromptu polling interactions by leveraging real-time hand gesture recognition and video filter feedback. We conducted studies to design and evaluate this intuitive gesture-based polling system with visual feedback. Our results demonstrated that our system was able to recognize attendees’ gestures and poll responses with reasonable accuracy, and showed improvements in hosts’ task workload performance. From our findings, our interface informs hosts of valuable results while maintaining organic gestural interaction cues with attendees similar to in-person meetings.",
@@ -168,7 +174,7 @@ const publications = [
       "Medication Adherence",
       "Activities of Daily Living",
     ],
-    paper: "https://dl.acm.org/doi/abs/10.1145/3411763.3451705",
+    paper: "https://dl.acm.org/doi/10.1145/3397481.3450673",
     abstract:
       "Nearly half of people prescribed medication to treat chronic or short-term conditions do not take their medicine as prescribed. This leads to worse treatment outcomes, higher hospital admission rates, increased healthcare costs, and increased morbidity and mortality rates. While some instances of medication non-adherence are a result of problems with the treatment plan or barriers caused by the health care provider, many are instances caused by patient-related factors such as forgetting, running out of medication, and not understanding the required dosages. This presents a clear need for patient-centered systems that can reliably increase medication adherence. To that end, in this work we describe an activity recognition system capable of recognizing when individuals take medication in an unconstrained, real-world environment. Our methodology uses a modified version of the Bagging ensemble method to suit unbalanced data and a classifier trained on the prediction probabilities of the Bagging classifier to identify when individuals took medication during a full-day study. Using this methodology we are able to recognize when individuals took medication with an F-measure of 0.77. Our system is a first step towards developing personal health interfaces that are capable of providing personalized medication adherence interventions.",
   },
@@ -180,12 +186,9 @@ const publications = [
     year: "January 2021",
     keywords: [
       "Journal Publication",
-      "Activity Recognition",
-      "Machine Learning",
-      "Smartwatches",
-      "Time-Series Data",
-      "Brushing Teeth",
-      "Activities of Daily Living",
+      "Education",
+      "Risk Perception",
+      "Online Education Platform",
     ],
     paper: "https://www.tandfonline.com/doi/full/10.1080/03098265.2021.1947204",
     abstract:
@@ -200,11 +203,9 @@ const publications = [
     year: "October 22-25, 2019",
     keywords: [
       "Conference Publication",
-      "Activity Recognition",
-      "Machine Learning",
-      "Smartwatches",
-      "Time-Series Data",
-      "Medication Adherence",
+      "Sketch Recognition",
+      "Gamification",
+      "Case Study",
     ],
     paper: "https://dl.acm.org/doi/abs/10.1145/3311350.3347175",
     abstract:
@@ -218,12 +219,10 @@ const publications = [
     year: "February 2019",
     keywords: [
       "Journal Publication",
-      "Activity Recognition",
-      "Machine Learning",
-      "Smartwatches",
-      "Time-Series Data",
-      "Brushing Teeth",
-      "Activities of Daily Living",
+      "Gesture Recognition",
+      "Gesture Elicitation",
+      "Computer-Mediated Communication",
+      "Emoji",
     ],
     paper: "https://dl.acm.org/doi/abs/10.1145/3297277",
     abstract:
@@ -256,12 +255,9 @@ const publications = [
     year: "July 2018",
     keywords: [
       "Journal Publication",
-      "Activity Recognition",
-      "Machine Learning",
-      "Smartwatches",
-      "Time-Series Data",
-      "Brushing Teeth",
-      "Activities of Daily Living",
+      "Sketch Recognition",
+      "Drawing Skill",
+      "Intelligent Tutoring Systems",
     ],
     paper: "https://dl.acm.org/citation.cfm?id=3181673",
     abstract:
@@ -295,15 +291,13 @@ const publications = [
     year: "March 7-11, 2018",
     keywords: [
       "Workshop Publication",
-      "Activity Recognition",
-      "Machine Learning",
-      "Smartwatches",
-      "Time-Series Data",
-      "Activities of Daily Living",
+      "Eye Tracking",
+      "Artwork Analysis",
+      "Heatmaps",
     ],
-    paper: "https://dl.acm.org/doi/10.1145/3172944.3173153",
+    paper: "https://ceur-ws.org/Vol-2068/wii4.pdf",
     abstract:
-      "The number of individuals living with chronic conditions continues to rise. As a result, a significant emphasis has been placed on both improving their quality of life as well as decreasing the cost and burden of caring for them. One particularly promising avenue for achieving this is the use of wearable devices, as they have become both affordable and reliable in recognizing fitness activities. However, while the existing algorithms reliably recognize physically intensive activities (e.g., walking vs. swimming), they fail to recognize personal hygiene actives that have more subtle differences (e.g., brushing teeth vs. washing hands). This research aims to develop novel features and intelligent, multi-stage algorithms that can reliably recognize such personal hygiene activities for chronic care. Additionally, we aim to further supplement this activity recognition with personalized interventions that enable individuals to manage their own personal health.",
+      "Artists value the ability to determine what parts of their composition is most appreciated by viewers. This information normally comes straight from viewers in the form of oral and written feedback; however, due to the lack of participation on the viewers part and because much of our visual understanding of artwork can be subconscious and difficult to express verbally, the value of this feedback is limited. Eye tracking technology has been used before to analyze artwork, however, most of this work has been performed in a controlled lab setting and as such this technology remains largely inaccessible to individual artists who may seek feedback. To address this issue, we developed a web-based system where artists can upload their artwork to be viewed by the viewers on their computer while a web camera tracks their eye movements. The artist receives feedback in the form of visualized eye tracking data that depicts what areas on the image looked at the most by viewers. We evaluated our system by having 5 artists upload a total of 17 images, which were subsequently viewed by 20 users. The artists expressed that seeing eye tracking data visualized on their artwork indicating the areas of interest is a unique way of receiving feedback and is highly useful. Also, they felt that the platform makes the artists more aware of their compositions; something that can especially help inexperienced artists. Furthermore, 90% of the viewers expressed that they were comfortable in providing eye movement data as a form of feedback to the artists.",
   },
 
   {
