@@ -5,15 +5,29 @@ interface PublicationInterface {
   publication: {
     title: string;
     venue: string;
-    location: string;
+    location?: string;
     year: string;
     keywords: string[];
-    paper: string;
-    abstract: string;
+    paper?: string;
+    abstract?: string;
   };
+  pubFilters: string[];
+  setPubFilters: Function;
 }
-export default function Project({ publication }: PublicationInterface) {
+export default function Publication({
+  publication,
+  pubFilters,
+  setPubFilters,
+}: PublicationInterface) {
   const [showAbstract, setShowAbstract] = useState<boolean>(false);
+
+  function updateFilterLists(keyword: string) {
+    if (pubFilters.indexOf(keyword) === -1) {
+      setPubFilters([...pubFilters, keyword]);
+    } else {
+      setPubFilters(pubFilters.filter((f) => f !== keyword));
+    }
+  }
 
   return (
     <div>
@@ -57,13 +71,16 @@ export default function Project({ publication }: PublicationInterface) {
         )}
 
         <div className="flex mt-4 flex-wrap gap-y-3 font-light">
-          {publication.keywords.map((k) => {
+          {publication.keywords.map((keyword) => {
             return (
               <div
-                key={k}
-                className="mx-2 px-4 bg-badge rounded-2xl cursor-pointer"
+                key={keyword}
+                className={"mx-2 px-4 bg-badge rounded-2xl cursor-pointer " + (pubFilters.indexOf(keyword) !== -1 ? "bg-text-color" : "")}
+                onClick={() => {
+                  updateFilterLists(keyword);
+                }}
               >
-                {k}
+                {keyword}
               </div>
             );
           })}

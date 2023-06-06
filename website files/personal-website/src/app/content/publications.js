@@ -6,7 +6,7 @@ const publications = [
     location: "Hamburg, Germany",
     year: "April 23-28, 2023",
     keywords: [
-      "Conference Publication",
+      "Conference",
       "Wearables",
       "Haptics",
       "Blind",
@@ -24,7 +24,7 @@ const publications = [
     location: "Hamburg, Germany",
     year: "April 23-28, 2023",
     keywords: [
-      "Conference Publication",
+      "Conference",
       "Concept Art",
       "Co-Creative Systems",
       "Thematic Analysis",
@@ -41,7 +41,7 @@ const publications = [
     venue: "IUI 2023 Companion Proceedings",
     location: "Sydney, Australia",
     year: "March 27, 2023",
-    keywords: ["Conference Publication", "MCI", "Machine Learning", "CNN"],
+    keywords: ["Conference", "MCI", "Machine Learning", "CNN"],
     paper: "https://dl.acm.org/doi/abs/10.1145/3581754.3584129",
     abstract:
       "Convolutional Neural Networks (CNNs) have been used in image-based applications and have made significant progress toward early detection of hard-to-detect diseases such as Mild Cognitive Impairment (MCI) and its prodromal stage Alzheimer’s Disease (AD). Despite this progress, there has been limited research on accurately distinguishing Normal Cognitive (NC) subjects from Early Mild Cognitive Impairment (EMCI) at the subject-level. This paper aims to address this gap by proposing the use of structural MRI (sMRI) images and demographic information, in conjunction with predictive models based on a shallow CNN architecture and a supervised hybrid neural network, to distinguish EMCI from NC at both the slice and subject level. These models have fewer parameters but still maintain a high level of performance in classifying EMCI and NC images and require fewer computational resources. Moreover, the model’s performance was trained and tested using only the initial and first-year visit MRI images from the newly released ADNI3 dataset.",
@@ -54,7 +54,7 @@ const publications = [
     location: "Sydney, Australia",
     year: "March 27, 2023",
     keywords: [
-      "Conference Publication",
+      "Conference",
       "Gesture Recognition",
       "Virtual Meetings",
       "Video Filters",
@@ -71,7 +71,7 @@ const publications = [
     location: "Sydney, Australia",
     year: "March 27, 2023",
     keywords: [
-      "Conference Publication",
+      "Conference",
       "Sketch Recognition",
       "Chemistry",
       "Intelligent Tutoring Systems",
@@ -101,7 +101,7 @@ const publications = [
       "Comparing Student and Recruiter Evaluations of Computer Science Resumes",
     venue: "IEEE Transactions on Education",
     year: "August 2022",
-    keywords: ["Journal Publication", "Education", "Resume Screening"],
+    keywords: ["Journal", "Education", "Resume Screening"],
     paper: "https://ieeexplore.ieee.org/abstract/document/9873810",
     abstract:
       "Contribution: This study identifies which entry-level computer science (CS) resume items are most important and compares the ratings of student and recruiter participants to investigate the accuracy of student beliefs. To the authors’ knowledge, this study is the first to analyze the extent to which CS students understand the resume screening process. The results of this have consequences for students in their own resume development.<br/><br/>Background: Although prior research studies the importance of different resume items generally, little is known about resumes for CS majors, which may contain distinctive sections. Less still is known about whether students understand the resume screening process.<br/><br/>Research Questions: Which items on entry-level CS resumes most directly influence screening decisions? What gaps exist between CS students’ and recruiters’ perceptions of resume items? Does the disparity in expertise between students and recruiters contribute to differences in resume screening?<br/><br/>Methodology: 197 recruiters and 73 CS undergraduates screened randomized CS resumes. Data were analyzed using ordinary least-squares regression with interactions.<br/><br/>Findings: Students were more likely than recruiters to move resumes to the next level and spent about 7 s less than recruiters when screening resumes. Though students correctly assessed the value of most resume items, they significantly overestimated the value of prior work experience such as internships.",
@@ -113,7 +113,7 @@ const publications = [
     venue: "Journal for STEM Education Research",
     year: "March 2022",
     keywords: [
-      "Journal Publication",
+      "Journal",
       "Education",
       "Gender Gap",
       "Online Education Platform",
@@ -130,7 +130,7 @@ const publications = [
     location: "Helsinki, Finland",
     year: "March 22-25, 2022",
     keywords: [
-      "Conference Publication",
+      "Conference",
       "Gesture Recognition",
       "Virtual Meetings",
       "Video Filters",
@@ -147,7 +147,7 @@ const publications = [
     location: "Yokohama, Japan",
     year: "May 8-13, 2021",
     keywords: [
-      "Conference Publication",
+      "Conference",
       "Activity Recognition",
       "Machine Learning",
       "Smartwatches",
@@ -166,7 +166,7 @@ const publications = [
     location: "College Station, Texasm USA",
     year: "April 13-17, 2021",
     keywords: [
-      "Conference Publication",
+      "Conference",
       "Activity Recognition",
       "Machine Learning",
       "Smartwatches",
@@ -185,7 +185,7 @@ const publications = [
     venue: "Journal of Geography in Higher Education",
     year: "January 2021",
     keywords: [
-      "Journal Publication",
+      "Journal",
       "Education",
       "Risk Perception",
       "Online Education Platform",
@@ -202,8 +202,9 @@ const publications = [
     location: "Barcelona, Spain",
     year: "October 22-25, 2019",
     keywords: [
-      "Conference Publication",
+      "Conference",
       "Sketch Recognition",
+      "Sketching",
       "Gamification",
       "Case Study",
     ],
@@ -218,7 +219,7 @@ const publications = [
     venue: "TIIS",
     year: "February 2019",
     keywords: [
-      "Journal Publication",
+      "Journal",
       "Gesture Recognition",
       "Gesture Elicitation",
       "Computer-Mediated Communication",
@@ -235,7 +236,7 @@ const publications = [
     location: "Honolulu, Hawaii, USA",
     year: "January 27-February 1, 2019",
     keywords: [
-      "Workshop Publication",
+      "Workshop",
       "Activity Recognition",
       "Machine Learning",
       "Smartwatches",
@@ -254,8 +255,9 @@ const publications = [
     venue: "TIIS",
     year: "July 2018",
     keywords: [
-      "Journal Publication",
+      "Journal",
       "Sketch Recognition",
+      "Sketching",
       "Drawing Skill",
       "Intelligent Tutoring Systems",
     ],
@@ -290,7 +292,7 @@ const publications = [
     location: "Tokyo, Japan",
     year: "March 7-11, 2018",
     keywords: [
-      "Workshop Publication",
+      "Workshop",
       "Eye Tracking",
       "Artwork Analysis",
       "Heatmaps",
@@ -307,7 +309,7 @@ const publications = [
     location: "Tokyo, Japan",
     year: "March 23-26, 2017",
     keywords: [
-      "Conference Publication",
+      "Conference",
       "Activity Recognition",
       "Machine Learning",
       "Smartwatches",
@@ -326,7 +328,7 @@ const publications = [
     venue: "Master's Thesis",
     year: "December 9, 2016",
     keywords: [
-      "Master's Thesis",
+      "MS Thesis",
       "Activity Recognition",
       "Machine Learning",
       "Smartwatches",
@@ -346,7 +348,7 @@ const publications = [
     location: "Montreal, Canada",
     year: "September 27, 2016",
     keywords: [
-      "Workshop Publication",
+      "Workshop",
       "Activity Recognition",
       "Machine Learning",
       "Smartwatches",

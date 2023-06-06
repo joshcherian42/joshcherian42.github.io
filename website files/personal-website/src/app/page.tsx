@@ -9,10 +9,11 @@ import publications from "./content/publications";
 
 export default function Home() {
   const [view, setView] = useState<string>("Home");
+  const [pubFilters, setPubFilters] = useState<string[]>([]);
 
   return (
     <main className="h-screen flex overflow-hidden">
-      <SideNav />
+      <SideNav view={view} pubFilters={pubFilters} setPubFilters={setPubFilters}/>
       <div className="w-4/5 pl-6">
         <div className="flex h-10 text-xl font-light mr-4 items-center">
           <div
@@ -73,7 +74,7 @@ export default function Home() {
           {view == "Home" && (
             <div
               className="text-2xl flex flex-col w-7/12 fixed"
-              style={{ top: "35%" }}
+              style={{ top: "37%" }}
             >
               <div className="text-3xl">
                 Hi I&apos;m <span className="text-text-color">Josh</span>.
@@ -92,7 +93,7 @@ export default function Home() {
                 gesture recognition, sketch recognition, eye tracking, and
                 intelligent tutoring systems.
               </div>
-              <div className="font-extralight">jcherian92@gmail.com</div>
+              
             </div>
           )}
           {view == "Projects" && (
@@ -105,7 +106,12 @@ export default function Home() {
           {view == "Publications" && (
             <div className="h-full overflow-y-scroll pb-10">
               {publications.map((p) => {
-                return <Publication publication={p} key={p.title} />;
+                if (
+                  pubFilters.length === 0 ||
+                  pubFilters.every((f)=>p.keywords.indexOf(f) !== -1)
+                ) {
+                  return <Publication publication={p} pubFilters={pubFilters} setPubFilters={setPubFilters} key={p.title} />;
+                }
               })}
             </div>
           )}
