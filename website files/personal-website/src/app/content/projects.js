@@ -1,4 +1,5 @@
 const projects = [
+
   {
     title: "Recognizing Taking Medication",
     type: "Research Project",
@@ -8,6 +9,14 @@ const projects = [
     images: ["/images/taking_meds_data_collection.png", "/images/taking_meds_t_sne.png"],
     widths: [400, 600],
 
+  },
+  {
+    title: "Ocular Data Systems",
+    type: "Industry Position",
+    role: "Data Science Consultant",
+    content: "Psychmotor impairment through the use of alcohol and drugs can be seen involuntary movements of the eyes. As a data science consultant at Ocular Data Systems, I refined, developed, and implemented machine learning algorithms designed to classify identify individuals under the influence of drugs or alcohol from their eye movements captured from a FOVE VR headset.",
+    images: [],
+    widths: []
   },
   {
     title: "FossilSketch",
@@ -32,7 +41,7 @@ const projects = [
     type: "Class Project",
     role: "Front-End Developer",
     content:
-      "Adverse Drug Events (ADEs), i.e., unintended pharmacologic effects, are a major source of concern when determining what medicine a patient needs. To aid in the detection, understanding, and prevention of ADEs, we explored how best to clean and visualize the FDA Adverse Event Reporting System (FAERS) dataset, a large publicly available dataset comprised of ADEs. <br /><br />We focused specifically on visualizing drug interactions, allowing users to search for drugs they are familiar with, have been perscribed, or are doing research on and see all related adverse events and the drugs involved. To visualize the data we used a <a href=https:\\www.d3-graph-gallery.com/graph/circularpacking_template.html>Circular Packing </a> diagram, where the size of the shown circles represents the number of events the drug has in common with the selected drug(s).",
+      "Adverse Drug Events (ADEs), i.e., unintended pharmacologic effects, are a major source of concern when determining what medicine a patient needs. To aid in the detection, understanding, and prevention of ADEs, we explored how best to clean and visualize the <a href=https://open.fda.gov/data/faers>FDA Adverse Event Reporting System (FAERS)</a> dataset, a large publicly available dataset comprised of ADEs. <br /><br />We focused specifically on visualizing drug interactions, allowing users to search for drugs they are familiar with, have been perscribed, or are doing research on and see all related adverse events and the drugs involved. To visualize the data we used a <a href=https:\\www.d3-graph-gallery.com/graph/circularpacking_template.html>Circular Packing diagram</a>, where the size of the shown circles represents the number of events the drug has in common with the selected drug(s).",
     images: ["/images/FDAnalyzer.gif"],
     widths: [800],
   },
@@ -41,7 +50,7 @@ const projects = [
     type: "Class Project",
     role: "Front-End Developer",
     content:
-      "This was a data visualization tool developed to visualize startup information from a variety of sources. You can interact with the website here: <a href=&quot;https://joshcherian42.github.io/startups-visualization/&quot;>Visualization</a>",
+      "This was a data visualization tool developed to visualize startup information from a variety of sources. You can interact with the website <a href=&quot;https://joshcherian42.github.io/startups-visualization/&quot;>here</a>.",
     images: ["/images/startupvisualization.gif"],
     widths: [800],
   },

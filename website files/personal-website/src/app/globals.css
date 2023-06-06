@@ -12,3 +12,7 @@ body {
   color: rgb(var(--foreground-rgb));
   background: rgb(var(--background-primary));
 }
+
+a {
+  text-decoration: underline;
+}

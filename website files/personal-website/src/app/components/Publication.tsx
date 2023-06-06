@@ -38,7 +38,9 @@ export default function Project({ publication }: PublicationInterface) {
           )}
           {publication.paper && (
             <div>
-              <a href={publication.paper}>Read Paper</a>
+              <a className="no-underline" href={publication.paper}>
+                Read Paper
+              </a>
             </div>
           )}
         </div>
