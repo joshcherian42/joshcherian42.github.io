@@ -1,4 +1,4 @@
-import Image from "next/image";
+import { Image } from '@mantine/core';
 import { IconContext } from "react-icons/lib";
 import {
   FaRegEnvelope,
@@ -47,7 +47,7 @@ export default function SideNav({ view, pubFilters, setPubFilters }: Props) {
           alt="Profile Picture"
           width={200}
           height={200}
-          className="rounded-full"
+          radius={'9999px'}
         ></Image>
         <div className="flex flew-wrap gap-3 mt-4">
           <a href="mailto:jcherian92@gmail.com">

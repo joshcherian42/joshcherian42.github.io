@@ -5,12 +5,14 @@
   "homepage": "http://yourUserName.github.io/appname",
   "scripts": {
     "dev": "next dev",
-    "predeploy": "next build",
+    "build": "next build",
     "deploy": "gh-pages -d build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "export": "next export"
   },
   "dependencies": {
+    "@mantine/core": "^6.0.13",
     "@types/node": "20.2.5",
     "@types/react": "18.2.8",
     "@types/react-dom": "18.2.4",
