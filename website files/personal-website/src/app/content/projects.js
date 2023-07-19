@@ -5,7 +5,7 @@ const projects = [
     type: "Research Project",
     role: "Machine Learning Researcher",
     content:
-      "Medication nonadherence is a significant and widespread issue that has been shown to lead to worsening clinical symptoms and outcomes, increased hospitalization readmission rates, and increased mortality rates. In this work, we envision a paradigm in which smartwatches can be taught to recognize the action of taking medication and thereby inform personalized interventions designed to improve the rates of medication adherence. We specifically focused on recognizing the activity of taking medication in real-world conditions, requiring us to address the significant class imbalance issue. We proposed a novel machine learning piepline that takes in accelerometer data collected from wrist worn smartwatches and uses a modified version of the Bagging ensemble model to recognize when a user took medication over the course of an entire day. This work was published at IUI, you can read the full paper <a href=https://dl.acm.org/doi/10.1145/3397481.3450673>here</a>.",
+      "Medication nonadherence is a significant and widespread issue that has been shown to lead to worsening clinical symptoms and outcomes, increased hospitalization readmission rates, and increased mortality rates. In this work, we envision a paradigm in which smartwatches can be taught to recognize the action of taking medication and thereby inform personalized interventions designed to improve the rates of medication adherence. We specifically focused on recognizing the activity of taking medication in real-world conditions, requiring us to address the significant class imbalance issue. We proposed a novel machine learning piepline that takes in accelerometer data collected from wrist worn smartwatches and uses a modified version of the Bagging ensemble model to recognize when a user took medication over the course of an entire day with an F1-score of 0.77. This work was published at IUI, you can read the full paper <a href=https://dl.acm.org/doi/10.1145/3397481.3450673>here</a>.",
     images: ["/images/taking_meds_data_collection.png", "/images/taking_meds_t_sne.png"],
     widths: [400, 600],
 
@@ -44,6 +44,15 @@ const projects = [
       "Adverse Drug Events (ADEs), i.e., unintended pharmacologic effects, are a major source of concern when determining what medicine a patient needs. To aid in the detection, understanding, and prevention of ADEs, we explored how best to clean and visualize the <a href=https://open.fda.gov/data/faers>FDA Adverse Event Reporting System (FAERS)</a> dataset, a large publicly available dataset comprised of ADEs. <br /><br />We focused specifically on visualizing drug interactions, allowing users to search for drugs they are familiar with, have been perscribed, or are doing research on and see all related adverse events and the drugs involved. To visualize the data we used a <a href=https:\\www.d3-graph-gallery.com/graph/circularpacking_template.html>Circular Packing diagram</a>, where the size of the shown circles represents the number of events the drug has in common with the selected drug(s).",
     images: ["/images/FDAnalyzer.gif"],
     widths: [800],
+  },
+  {
+    title: "Recognizing Brushing Teeth",
+    type: "Research Project",
+    role: "Machine Learning Researcher",
+    content:
+      "Failing to brush one's teeth can have devestating health consequences, having been linked to the onset of a number of diseases and chronic conditions. For older adults, this risk can be compounded by changes in their physical and mental abilities, as they may need reminding, supervision, or assistance with brushing teeth and maintaining their oral hygiene. In this work, we envision a paradigm in which physicians and/or family members can be alerted if older adults are brushing their teeth properly and regularly. Specifically, we proposed a novel two-tier machine learning pipeline capable of recognizing the activity of brushing teeth from wrist-mounted accelerometer data collected from users over the course of a month-long in-the-wild user study with an F1-score of 0.82. This work was published at Pervasive Health, you can read the full paper <a href=https://dl.acm.org/doi/10.1145/3154862.3154866>here</a>.",
+    images: ["/images/brushing_teeth_data_collection.png", "/images/brushing_teeth_FP.png"],
+    widths: [400, 600],
   },
   {
     title: "Startups Visualization",
