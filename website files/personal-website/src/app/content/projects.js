@@ -5,7 +5,7 @@ const projects = [
     type: "Research Project",
     role: "Machine Learning Researcher",
     content:
-      "Medication nonadherence is a significant and widespread issue that has been shown to lead to worsening clinical symptoms and outcomes, increased hospitalization readmision rates, and increased mortality rates. In this work, we envision a paradigm in which smartwatches can be taught to recognize the action of taking medication and thereby inform personalized interventions designed to improve the rates of medication adherence. We specifically focused on recognizing the activity of taking medication in real-world conditions, requiring us to address the significant class imbalance issue. We proposed a novel machine learning piepline that takes in accelerometer data collected from wrist worn smartwatches and uses a modified version of the Bagging ensemble model to recognize when a user took medication over the course of an entire day. This work was published at IUI, you can read the full paper <a href=https://dl.acm.org/doi/10.1145/3397481.3450673>here</a>.",
+      "Medication nonadherence is a significant and widespread issue that has been shown to lead to worsening clinical symptoms and outcomes, increased hospitalization readmission rates, and increased mortality rates. In this work, we envision a paradigm in which smartwatches can be taught to recognize the action of taking medication and thereby inform personalized interventions designed to improve the rates of medication adherence. We specifically focused on recognizing the activity of taking medication in real-world conditions, requiring us to address the significant class imbalance issue. We proposed a novel machine learning piepline that takes in accelerometer data collected from wrist worn smartwatches and uses a modified version of the Bagging ensemble model to recognize when a user took medication over the course of an entire day. This work was published at IUI, you can read the full paper <a href=https://dl.acm.org/doi/10.1145/3397481.3450673>here</a>.",
     images: ["/images/taking_meds_data_collection.png", "/images/taking_meds_t_sne.png"],
     widths: [400, 600],
 
@@ -14,7 +14,7 @@ const projects = [
     title: "Ocular Data Systems",
     type: "Industry Position",
     role: "Data Science Consultant",
-    content: "Psychmotor impairment through the use of alcohol and drugs can be seen involuntary movements of the eyes. As a data science consultant at Ocular Data Systems, I refined, developed, and implemented machine learning algorithms designed to classify identify individuals under the influence of drugs or alcohol from their eye movements captured from a FOVE VR headset.",
+    content: "Psychmotor impairment through the use of alcohol and drugs can be seen as involuntary movements of the eyes. As a data science consultant at Ocular Data Systems, I refined, developed, and implemented machine learning algorithms designed to identify individuals under the influence of drugs or alcohol from their eye movements captured from a FOVE VR headset.",
     images: [],
     widths: []
   },
