@@ -1,4 +1,5 @@
-import { Image } from '@mantine/core';
+import { useState, useEffect } from "react";
+import { Image } from "@mantine/core";
 import { IconContext } from "react-icons/lib";
 import {
   FaRegEnvelope,
@@ -8,12 +9,14 @@ import {
 } from "react-icons/fa";
 
 interface Props {
-  view: string;
+  view: string | null;
   pubFilters: string[];
   setPubFilters: Function;
 }
 
 export default function SideNav({ view, pubFilters, setPubFilters }: Props) {
+  const [width, setWidth] = useState(window.innerWidth);
+  const [height, setHeight] = useState(window.innerHeight);
   const pubTypes = [
     "Conference",
     "Journal",
@@ -39,17 +42,40 @@ export default function SideNav({ view, pubFilters, setPubFilters }: Props) {
     }
   }
 
+  useEffect(() => {
+    const handleResizeWindowWidth = () => setWidth(window.innerWidth);
+    const handleResizeWindowHeight = () => setHeight(window.innerHeight);
+    window.addEventListener("resize", handleResizeWindowWidth);
+    window.addEventListener("resize", handleResizeWindowHeight);
+
+    return () => {
+      window.removeEventListener("resize", handleResizeWindowWidth);
+      window.removeEventListener("resize", handleResizeWindowHeight);
+    };
+  }, []);
+
   return (
-    <div className="h-screen w-1/5 flex flex-col items-center justify-evenly bg-secondary">
+    <div
+      className="h-screen w-1/5 flex flex-col items-center bg-secondary overflow-y-auto"
+      style={{
+        justifyContent:
+          height >= 700
+            ? "space-evenly"
+            : view === "Publications" && width >= 1024
+            ? "normal"
+            : "center",
+      }}
+    >
       <div>
         <Image
           src="/images/website_profile.png"
           alt="Profile Picture"
           width={200}
           height={200}
-          radius={'9999px'}
+          radius={"9999px"}
+          className="hidden lg:block"
         ></Image>
-        <div className="flex flew-wrap gap-3 mt-4">
+        <div className="flex flew-wrap gap-3 mt-4 flex-col lg:flex-row">
           <a href="mailto:jcherian92@gmail.com">
             <IconContext.Provider
               value={{ color: "rgba(0, 0, 0, 0.7)", size: "40px" }}
@@ -80,7 +106,7 @@ export default function SideNav({ view, pubFilters, setPubFilters }: Props) {
           </a>
         </div>
       </div>
-      {view === "Publications" && (
+      {view === "Publications" && width >= 1024 && (
         <div className="flex flex-col mx-6 border-t-2 border-grey border-solid">
           <div className="my-2 text-lg">Publication Type</div>
           <div className="flex  flex-wrap gap-x-1 gap-y-2">

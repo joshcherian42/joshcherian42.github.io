@@ -20,7 +20,7 @@ export default function Project({ project }: ProjectInterface) {
         <div className="text-lg font-thin">
           <span className="text-base">Role:</span> {project.role}
         </div>
-        <div className="text-xl my-4 font-light text-justify">
+        <div className="text-xl my-4 font-light sm:text-justify">
           {parse(project.content)}
         </div>
         <div className="flex items-center justify-center">
