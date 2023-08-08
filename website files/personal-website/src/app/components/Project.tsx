@@ -24,7 +24,7 @@ export default function Project({ project }: ProjectInterface) {
           opacity={0.7}
           className="cursor-zoom-out flex justify-center items-center"
         >
-          <img src={toggleOverlay} className="w-[95%] max-h-[95%] rounded-xl" />
+          <img src={toggleOverlay} className="max-w-[95%] max-h-[95%] rounded-xl" />
         </Overlay>
       )}
       <div className="my-4 border-grey border-b-2 py-4 mr-8 w-11/12">
