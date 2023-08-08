@@ -15,8 +15,9 @@ interface Props {
 }
 
 export default function SideNav({ view, pubFilters, setPubFilters }: Props) {
-  const [width, setWidth] = useState(window.innerWidth);
-  const [height, setHeight] = useState(window.innerHeight);
+  const [width, setWidth] = useState<number>();
+  const [height, setHeight] = useState<number>();
+
   const pubTypes = [
     "Conference",
     "Journal",
@@ -43,6 +44,9 @@ export default function SideNav({ view, pubFilters, setPubFilters }: Props) {
   }
 
   useEffect(() => {
+    setWidth(window.innerWidth);
+    setHeight(window.innerHeight);
+
     const handleResizeWindowWidth = () => setWidth(window.innerWidth);
     const handleResizeWindowHeight = () => setHeight(window.innerHeight);
     window.addEventListener("resize", handleResizeWindowWidth);
@@ -59,9 +63,9 @@ export default function SideNav({ view, pubFilters, setPubFilters }: Props) {
       className="h-screen w-1/5 flex flex-col items-center bg-secondary overflow-y-auto"
       style={{
         justifyContent:
-          height >= 700
+          height != undefined && height >= 700
             ? "space-evenly"
-            : view === "Publications" && width >= 1024
+            : view === "Publications" && width != undefined && width >= 1024
             ? "normal"
             : "center",
       }}
@@ -106,7 +110,7 @@ export default function SideNav({ view, pubFilters, setPubFilters }: Props) {
           </a>
         </div>
       </div>
-      {view === "Publications" && width >= 1024 && (
+      {view === "Publications" && width != undefined && width >= 1024 && (
         <div className="flex flex-col mx-6 border-t-2 border-grey border-solid">
           <div className="my-2 text-lg">Publication Type</div>
           <div className="flex  flex-wrap gap-x-1 gap-y-2">

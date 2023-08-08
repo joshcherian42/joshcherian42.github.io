@@ -11,18 +11,16 @@ import { MantineProvider, Select } from "@mantine/core";
 export default function Home() {
   const [view, setView] = useState<string | null>("Home");
   const [pubFilters, setPubFilters] = useState<string[]>([]);
-  const [width, setWidth] = useState(window.innerWidth);
-  const [height, setHeight] = useState(window.innerHeight);
+  const [width, setWidth] = useState<number>();
 
   useEffect(() => {
+    setWidth(window.innerWidth);
+
     const handleResizeWindowWidth = () => setWidth(window.innerWidth);
-    const handleResizeWindowHeight = () => setHeight(window.innerHeight);
     window.addEventListener("resize", handleResizeWindowWidth);
-    window.addEventListener("resize", handleResizeWindowHeight);
 
     return () => {
       window.removeEventListener("resize", handleResizeWindowWidth);
-      window.removeEventListener("resize", handleResizeWindowHeight);
     };
   }, []);
 
@@ -35,7 +33,7 @@ export default function Home() {
           setPubFilters={setPubFilters}
         />
         <div className="w-4/5 pl-6">
-          {width < 640 && (
+          {width != undefined && width < 640 && (
             <Select
               placeholder="Pick one"
               value={view}
@@ -50,7 +48,7 @@ export default function Home() {
               ]}
             />
           )}
-          {width >= 640 && (
+          {width != undefined && width >= 640 && (
             <div className="flex h-10 text-xl font-light mr-4 items-center">
               <div
                 className={
@@ -168,8 +166,8 @@ export default function Home() {
                   src="https://drive.google.com/file/d/1a8ODk1gU15M_LZBCNfH8IiCl04DraDB0/preview"
                   style={{
                     height: "90vh",
-                    width: width > 1300 ? "1000px" : "75vw",
-                    paddingRight: width > 1300 ? 0 : "3rem",
+                    width: width != undefined && width > 1300 ? "1000px" : "75vw",
+                    paddingRight: width != undefined && width > 1300 ? 0 : "3rem",
                   }}
                   allow="autoplay"
                 ></iframe>
