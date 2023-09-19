@@ -11,7 +11,7 @@ import { MantineProvider, Select } from "@mantine/core";
 export default function Home() {
   const [view, setView] = useState<string | null>("Home");
   const [pubFilters, setPubFilters] = useState<string[]>([]);
-  const [width, setWidth] = useState<number>();
+  const [width, setWidth] = useState<number>(1000);
 
   useEffect(() => {
     setWidth(window.innerWidth);
