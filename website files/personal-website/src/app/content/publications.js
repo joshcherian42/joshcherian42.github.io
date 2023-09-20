@@ -1,6 +1,21 @@
 const publications = [
   {
     title:
+      "A Step Towards Better Care: Understanding What Assisted Living Facilities' Caregivers and Residents Value in Health Monitoring Systems [ACCEPTED]",
+    venue: "CSCW 2024",
+    location: "San José, Costa Rica",
+    year: "November 9-13, 2024",
+    keywords: [
+      "Conference",
+      "Health Monitoring",
+      "Health Care Management",
+      "Elderly Care",
+      "Assisted Living",
+      "Activity Recognition",
+    ]
+  },
+  {
+    title:
       "A Wearable Haptic Interface for Assisting Blind and Visually Impaired Students in Learning Algebraic Equations",
     venue: "CHI 2023 LBW",
     location: "Hamburg, Germany",

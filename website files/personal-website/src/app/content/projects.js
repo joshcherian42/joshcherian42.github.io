@@ -1,5 +1,14 @@
 const projects = [
+  {
+    title: "Understanding What Assisted Living Facilities' Caregivers and Residents Value in Health Monitoring Systems",
+    type: "Research Project",
+    role: "HCI Researcher",
+    content:
+      "This work aimed to better understand the views and needs of caregivers and older adults in assisted living facilities through two sets of semi-structured interviews with caregivers and older adults. With caregivers, insights gleaned from the thematic analysis of the first round of interviews guided the design of <em>AutoRounds</em> (which can be viewed <a href=https://auto-rounds.vercel.app/>here</a>), a prototype health monitoring system that was built as a React app that could be used on tablets as part of a caregiver's workflow. The themes from the initial thematic analysis were refined using thematic analysis of the second round of interviews which were conducted with a separate group of caregivers after they had performed caregiving tasks within <em>AutoRounds</em>. With residents, we present the thematic analysis of interviews conducted before and after they participated in a separate simulation of a health monitoring system for one week. This work has been accepted at CSCW 2024.",
+    images: ["/images/AutoRounds.gif"],
+    widths: [800],
 
+  },
   {
     title: "Recognizing Taking Medication",
     type: "Research Project",
@@ -23,9 +32,9 @@ const projects = [
     type: "Research Project",
     role: "Full-Stack Developer, HCI Researcher",
     content:
-      "FossilSketch is a web-based interactive learning tool for teaching micropaleontology that's been used extensively in undergraduate geology classrooms. As a developer on this project, I rebuilt the entire website in Next.js and TypeScript, modernizing and increasing the modularity of the codebase. I also assisted in facilitating classroom deployments and conducted focus groups/interviews with students and instructors.",
+      "<a href=https://fossilsketch.org/>FossilSketch</a> is a web-based interactive learning tool for teaching micropaleontology that's been used extensively in undergraduate geology classrooms. As a developer on this project, I rebuilt the entire website in Next.js and TypeScript, modernizing and increasing the modularity of the codebase. I also assisted in facilitating classroom deployments and conducted focus groups/interviews with students and instructors.",
     images: ["/images/fossilsketch.gif"],
-    widths: [600],
+    widths: [800],
   },
   {
     title: "Active Living Austin",
